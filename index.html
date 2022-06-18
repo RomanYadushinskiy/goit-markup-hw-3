@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -18,122 +20,153 @@
 
     <!--Хедер-->
     <header class="header">
+        <div class="container header-container">
 
-        <a href="./index.html" class="logo" lang="en">Web<span class="studio-header">Studio</span></a>
+            <a href="./index.html" class="logo" lang="en">Web<span class="studio-header">Studio</span></a>
 
-        <nav>
-            <ul class="nav-site">
-                <li><a class="nav-link current" href="">Студия</a></li>
-                <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-link" href="">Контакты</a></li>
+            <nav class="main-nav">
+                <ul class="nav-site">
+                    <li class="nav-item"><a class="nav-link current" href="">Студия</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!--Контакти-->
+
+            <ul class="nav-contacts">
+                <li class="nav-item"><a class="header-contacts" href="emailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="nav-item"><a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
 
-        <!--Контакти-->
-        <ul>
-            <li><a class="header-contacts" href="emailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
+
     </header>
 
     <main>
 
         <!--Герой-->
         <section class="section-hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-hero">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button-hero">Заказать услугу</button>
+            </div>
         </section>
 
         <!--Особливості-->
         <section class="section-features">
+            <div class="container features-container">
 
-            <h2 hidden>Особенности</h2>
-            <ul>
+                <h2 class="visually-hidden">Особенности</h2>
+                <ul class="site-features card-set">
 
-                <li>
-                    <h3 class="title-feutures">Внимание к деталям</h3>
-                    <p class="text-feutures">Идейные соображения, а также начало повседневной работы по формированию
-                        позиции.</p>
-                </li>
+                    <li class="features-item card-set-item">
+                        <h3 class="title-feutures">Внимание к деталям</h3>
+                        <p class="text-feutures">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</p>
+                    </li>
 
-                <li>
-                    <h3 class="title-feutures">Пунктуальность</h3>
-                    <p class="text-feutures">Задача организации, в особенности же рамки и место обучения кадров влечет
-                        за собой.
-                    </p>
-                </li>
+                    <li class="features-item card-set-item">
+                        <h3 class="title-feutures">Пунктуальность</h3>
+                        <p class="text-feutures">Задача организации, в особенности же рамки и место обучения кадров
+                            влечет
+                            за собой.
+                        </p>
+                    </li>
 
-                <li>
-                    <h3 class="title-feutures">Планирование</h3>
-                    <p class="text-feutures">Равным образом консультация с широким активом в значительной степени
-                        обуславливает.
-                    </p>
-                </li>
+                    <li class="features-item card-set-item">
+                        <h3 class="title-feutures">Планирование</h3>
+                        <p class="text-feutures">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.
+                        </p>
+                    </li>
 
-                <li>
-                    <h3 class="title-feutures">Современные технологии</h3>
-                    <p class="text-feutures">Значимость этих проблем настолько очевидна, что реализация плановых
-                        заданий.</p>
-                </li>
+                    <li class="features-item card-set-item">
+                        <h3 class="title-feutures">Современные технологии</h3>
+                        <p class="text-feutures">Значимость этих проблем настолько очевидна, что реализация плановых
+                            заданий.</p>
+                    </li>
 
-            </ul>
+                </ul>
+
+            </div>
         </section>
 
         <!--Чим ми займаємось-->
         <section class="section-what">
-            <h2 class="title-what">Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./images/what-we-do/desktop.jpg" alt="компютер" width="370" height="294"></li>
-                <li><img src="./images/what-we-do/phone.jpg" alt="телефон" width="370" height="294"></li>
-                <li><img src="./images/what-we-do/tab.jpg" alt="планшет" width="370" height="294"></li>
-            </ul>
-
+            <div class="container what-container">
+                <h2 class="title-what">Чем мы занимаемся</h2>
+                <ul class="site-what card-set">
+                    <li class="what-item card-set-item"><img src="./images/what-we-do/desktop.jpg" alt="компютер"
+                            width="370" height="294"></li>
+                    <li class="what-item card-set-item"><img src="./images/what-we-do/phone.jpg" alt="телефон"
+                            width="370" height="294"></li>
+                    <li class="what-item card-set-item"><img src="./images/what-we-do/tab.jpg" alt="планшет" width="370"
+                            height="294">
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!--Команда-->
         <section class="section-team">
+            <div class="container container-team">
 
-            <h2 class="title-team">Наша команда</h2>
-            <ul>
-                <li class="site-team"><img src="./images/team/photo1.jpg" alt="Игорь Демьяненко" width="270"
-                        height="260">
-                    <h3 class="title-team-name">Игорь Демьяненко</h3>
-                    <p lang="en" class="text-team">Product Designer</p>
-                </li>
-                <li class="site-team"><img src="./images/team/photo2.jpg" alt="Ольга Репина" width="270" height="260">
-                    <h3 class="title-team-name">Ольга Репина</h3>
-                    <p lang="en" class="text-team">Frontend Developer</p>
-                </li>
-                <li class="site-team"><img src="./images/team/photo3.jpg" alt="Николай Тарасов" width="270"
-                        height="260">
-                    <h3 class="title-team-name">Николай Тарасов</h3>
-                    <p lang="en" class="text-team">Marketing</p>
-                </li>
-                <li class="site-team"><img src="./images/team/photo4.jpg" alt="Михаил Ермаков" width="270" height="260">
-                    <h3 class="title-team-name">Михаил Ермаков</h3>
-                    <p lang="en" class="text-team">UI Designer</p>
-                </li>
-            </ul>
-
+                <h2 class="title-team">Наша команда</h2>
+                <ul class="site-team card-set">
+                    <li class="team-item card-set-item"><img src="./images/team/photo1.jpg" alt="Игорь Демьяненко"
+                            width="270" height="260">
+                        <div class="team-name">
+                            <h3 class="title-team-name">Игорь Демьяненко</h3>
+                            <p lang="en" class="text-team">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="team-item card-set-item"><img src="./images/team/photo2.jpg" alt="Ольга Репина"
+                            width="270" height="260">
+                        <div class="team-name">
+                            <h3 class="title-team-name">Ольга Репина</h3>
+                            <p lang="en" class="text-team">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="team-item card-set-item"><img src="./images/team/photo3.jpg" alt="Николай Тарасов"
+                            width="270" height="260">
+                        <div class="team-name">
+                            <h3 class="title-team-name">Николай Тарасов</h3>
+                            <p lang="en" class="text-team">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="team-item card-set-item"><img src="./images/team/photo4.jpg" alt="Михаил Ермаков"
+                            width="270" height="260">
+                        <div class="team-name">
+                            <h3 class="title-team-name">Михаил Ермаков</h3>
+                            <p lang="en" class="text-team">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </section>
     </main>
 
     <!--Підвал-->
     <footer class="footer">
+        <div class="container container-footer">
 
-        <a href="./index.html" class="logo" lang="en">Web<span class="logo-footer">Studio</span></a>
+            <a href="./index.html" class="logo" lang="en">Web<span class="logo-footer">Studio</span></a>
 
-        <address>
+            <address>
 
 
-            <ul>
-                <li class="adress">г. Киев, пр-т Леси Украинки, 26</li>
-                <li><a class="footer-contacts" href="emailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+                <ul class="site-footer">
+                    <li class="adress">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li class="footer-cnt-item"><a class="footer-contacts"
+                            href="emailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
 
-        </address>
+            </address>
+        </div>
 
     </footer>
 
