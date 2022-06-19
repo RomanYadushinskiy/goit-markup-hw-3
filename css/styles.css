@@ -270,6 +270,11 @@ padding-top: 94px;
     letter-spacing: 0.03em;      
 }
 
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .site-team {
     --items: 4;
 }
@@ -278,7 +283,6 @@ padding-top: 94px;
     background-color: var(--rpimary-color);
     padding-top: 30px;
     padding-bottom: 30px;
-    border-radius: 0 0 4px 4px;
 }
 
 .title-team-name {
@@ -371,11 +375,6 @@ padding-top: 94px;
 
 /* футер */
 
-.container-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .site-footer {
     margin-top: 0;
     margin-bottom: 0;
@@ -386,6 +385,7 @@ padding-top: 94px;
 }
 
 .footer {
+    padding: 60px 0;
     background-color: var(--first-section-color);
 }
 
